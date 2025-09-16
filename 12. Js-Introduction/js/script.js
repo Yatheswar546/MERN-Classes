@@ -2,14 +2,17 @@
 /*
     1) console.log
     2) alert()
+    3) confirm()
     3) document.write()
     4) .innerHTML
 */
 
 // console.log("hello, this is console.log");
 // alert("Hello, this is alert");
+// confirm("Are you sure want to exit ?");
 // document.write("Hello, I am document.write()")
-document.getElementById("hello").innerHTML = "Hello Everyone! Welcome to JS"
+// content = document.getElementById("hello").innerHTML;
+// document.getElementById("hello").innerHTML = "Hello Everyone! Welcome to JS"
 
 // Js Identifiers
 /*
@@ -54,7 +57,7 @@ name2 = "Shafi"
 
 // console.log(name2);
 
-// name2 = "Avinash";
+name2 = "Avinash";
 
 // console.log(name2)
 
@@ -70,7 +73,6 @@ var        yes               yes
 let         no               yes
 const       no               no
 */
-
 
 /*
     Scope of a Variable:
@@ -110,6 +112,14 @@ const       no               no
 // }
 // console.log(n4)
 
+// const n5 = 200;
+// console.log(n5)
+// {
+//     const n5 = 250;
+//     console.log(n5);
+// }
+// console.log(n5)
+
 // var - Global Scope
 // let, const - Block Scope
 
@@ -124,8 +134,8 @@ const       no               no
     7) Ternary - (? :)
 */
 
-var n1 = 5
-var n2 = 4
+// var n1 = 4
+// var n2 = 3
 // console.log(n1 ** n2)
 
 // Operator Precedence - BEDMRAS
@@ -140,28 +150,28 @@ var n2 = 4
 // 7.25
 
 // var n1 = n1 + 10
-n1 += 10
+// n1 += 10
 // console.log(n1)
 
-x1 = 500
-x2 = "500"
+// x1 = 500
+// x2 = "500"
 
 // console.log(x1 == x2)
 // console.log(x1 === x2)
 
 // type coersion: implicit conversion of datatype done by '=='
 
-x3 = 100
-x4 = "100"
+// x3 = 100
+// x4 = "100"
 // console.log(x3 != x4)
 // console.log(x3 !== x4)
 
-if (x3 < 200 || x3 > 100) {
-    // console.log("yes")
-}
-else {
-    // console.log("no")
-}
+// if (x3 < 200 && x3 > 100) {
+//     console.log("yes")
+// }
+// else {
+//     console.log("no")
+// }
 
 // console.log(!(x3 < 200))
 
@@ -179,16 +189,21 @@ else {
   2&3 - 0011 (3)
 */
 
-// console.log(2 ^ 3);
+// console.log(2 ^ 5);
 /*
     2 - 0010
-    3 - 0011
-  2&3 - 0001 (1)
+    5 - 0101
+  2^5 - 0111 (7)
 */
 
 // console.log(7 >> 1);
 /*
     7 - 011 1 ==> 0011 (3)
+*/
+
+// console.log(7 << 1);
+/*
+    7 - 0 111 ==> 1110 (3)
 */
 
 n = 100
@@ -199,14 +214,21 @@ fruits = ['apple', 'banana']
 // console.log(typeof (s))
 // console.log(typeof (fruits))
 
-// if (n != 100) {
-//     console.log("no, wrong statement")
+// if(typeof(n) == "number"){
+//     console.log("n is a Number");
 // }
-// else {
-//     console.log("n is 100")
+// else{
+//     console.log("n is not a Number");
 // }
 
-// (n != 100) ? console.log("no, wrong statement") : console.log("n is 100")
+// if (n != 100) {
+//     console.log("n is not 100, it is changed");
+// }
+// else {
+//     console.log("n is 100");
+// }
+
+// (n != 100) ? console.log("n is not 100, it is changed") : console.log("n is 100");
 
 
 // Js Data Types
@@ -250,5 +272,5 @@ var y = null;
 num1 = 1234e5    // 123400000
 num2 = 1234e-5   // 0.01234
 
-console.log(num1)
-console.log(num2)
+// console.log(num1)
+// console.log(num2)
