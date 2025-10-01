@@ -102,3 +102,21 @@ arr1 = str11.split(" ")
 console.log(arr1);
 
 console.log(typeof (arr1));
+
+//////////////////////////////////
+
+// Strings are Immutable (Unchangeable)
+
+let str = "I am Original String";
+
+// console.log(str1.substring(5, 13));
+
+let new_str1 = "Hello";
+
+// console.log(new_str1)
+
+let new_str2 = " Everyone";
+
+new_str1 = new_str1 + new_str2;
+
+// console.log(str2);
